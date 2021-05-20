@@ -9,3 +9,89 @@ $colors: (
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  header {
+    background: color(navbar);
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+
+    .container {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        cursor: pointer;
+      }
+
+      .logo-container {
+        align-self: center;
+        flex-grow: 3;
+        a {
+          text-decoration: none;
+          color: color(primary);
+          text-transform: uppercase;
+          text-shadow: 4px 4px 12px rgba(150, 150, 150, 0.4);
+          span {
+            color: color(accent);
+          }
+        }
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+    .container {
+      width: 80%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5em 0;
+      #Print-Kids-Logo {
+        max-width: 60%;
+      }
+      .text-area {
+        padding: 2em 0;
+        h2 {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 2.2em;
+          line-height: 1.1em;
+          color: color(primary);
+          span {
+            color: color(accent);
+          }
+        }
+        p {
+          margin: 1em;
+          font-size: 1.2em;
+          text-align: center;
+          font-style: italic;
+          color: color(primary);
+        }
+      }
+    }
+  }
+}

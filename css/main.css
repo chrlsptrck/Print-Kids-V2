@@ -1,1 +1,129 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header {
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 0;
+}
+
+body header .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .container img {
+  cursor: pointer;
+}
+
+body header .container .logo-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+body header .container .logo-container a {
+  text-decoration: none;
+  color: #707070;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 12px rgba(150, 150, 150, 0.4);
+}
+
+body header .container .logo-container a span {
+  color: #e28d1e;
+}
+
+body header .container nav {
+  display: none;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3em 0;
+}
+
+body section .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em 0;
+}
+
+body section .container #Print-Kids-Logo {
+  max-width: 60%;
+}
+
+body section .container .text-area {
+  padding: 2em 0;
+}
+
+body section .container .text-area h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  line-height: 1.1em;
+  color: #707070;
+}
+
+body section .container .text-area h2 span {
+  color: #e28d1e;
+}
+
+body section .container .text-area p {
+  margin: 1em;
+  font-size: 1.2em;
+  text-align: center;
+  font-style: italic;
+  color: #707070;
+}
+/*# sourceMappingURL=main.css.map */

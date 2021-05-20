@@ -1,0 +1,11 @@
+$colors: (
+  navbar: #eeeeee,
+  primary: #707070,
+  accent: #e28d1e,
+  accent-inquire: #cd375c,
+  product-section: #201e1c,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

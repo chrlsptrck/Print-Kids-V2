@@ -14,6 +14,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container {
@@ -21,6 +24,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -140,7 +147,7 @@ section#mid .container {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 5em 0;
+  padding: 3em 0;
 }
 
 section#mid .container .section-title {
@@ -201,7 +208,6 @@ section#mid .container .product .product-card h4 {
 section#mid .container a {
   background: #cd375c;
   color: white;
-  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,8 +227,8 @@ section#mid .container a {
 }
 
 section#bottom {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 section#bottom .container > * {
@@ -285,7 +291,7 @@ section#bottom .container h6::after {
 }
 
 footer {
-  height: 100px;
+  height: 170px;
   background: #201e1c;
   color: white;
   display: -webkit-box;
@@ -328,6 +334,11 @@ footer .container .copy-right {
 
 footer .container .copy-right h5 {
   font-size: 2em;
+  cursor: pointer;
+}
+
+footer .container .copy-right h5:hover {
+  color: #e28d1e;
 }
 
 footer .container .copy-right p {
@@ -344,5 +355,283 @@ footer .container .social-icons {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .social-icons a svg {
+  fill: white;
+}
+
+footer .container .social-icons a svg:hover {
+  fill: #e28d1e;
+  top: 1px;
+  position: relative;
+}
+
+@media only screen and (min-width: 617px) {
+  section#bottom .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+}
+
+@media only screen and (min-width: 806px) {
+  section#main .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse nowrap;
+            flex-flow: row-reverse nowrap;
+  }
+  section#main .container .main-title-text {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  header {
+    padding: 1em 0;
+  }
+  header .container img {
+    display: none;
+  }
+  header .container .logo-container {
+    margin-right: 30px;
+  }
+  header .container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .container nav img {
+    display: none;
+  }
+  header .container nav ul > * {
+    margin: 0 10px;
+  }
+  header .container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .container nav ul li:nth-child(-n + 2) {
+    width: 60px;
+  }
+  header .container nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 109px;
+  }
+  header .container nav ul li a {
+    color: #707070;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  header .container nav ul li a:hover {
+    color: #e28d1e;
+    font-weight: 800;
+    position: relative;
+  }
+  header .container nav .visit {
+    color: #e28d1e;
+    font-weight: 500;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    border: 2px solid #e28d1e;
+    padding: 0.7em;
+    border-radius: 30px;
+  }
+  section#main .container .main-title-text {
+    text-align: left;
+    margin: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  section#main .container .main-title-text h2 {
+    font-size: 2.5em;
+    text-align: left;
+    width: 100%;
+  }
+  section#main .container .main-title-text p {
+    text-align: left;
+    width: 400px;
+  }
+  section#main .container .main-image {
+    width: 290px;
+    max-width: 290px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  footer .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  section#main .container .main-title-text {
+    text-align: left;
+    margin: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  section#main .container .main-title-text h2 {
+    font-size: 3em;
+    text-align: left;
+    width: 100%;
+  }
+  section#main .container .main-title-text p {
+    text-align: left;
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  header .container .logo-container {
+    margin-right: 5%;
+  }
+  section#mid .container .product {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  section#mid .container .product .product-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#mid .container .product .product-card img {
+    width: 190px;
+  }
+  section#mid .container .product .product-card h4 {
+    font-size: 1em;
+  }
+  section#bottom .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  section#main .container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  section#main .container .main-title-text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  section#main .container .main-title-text h2 {
+    font-size: 3.7em;
+  }
+  section#main .container .main-title-text p {
+    width: auto;
+    max-width: 80%;
+  }
+  section#main .container .main-image {
+    width: 700px;
+    margin-left: 5%;
+  }
+  section#mid .container .section-title {
+    left: 0px;
+  }
+  section#mid .container .product {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section#mid .container .product .product-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#mid .container .product .product-card img {
+    width: 190px;
+  }
+  section#mid .container a {
+    right: 0px;
+  }
+}
+
+@media only screen and (min-width: 1370px) {
+  section {
+    margin: 5% 0;
+  }
+  section#mid .container .product {
+    padding: 2em 0;
+  }
+  section#mid .container .product .product-card img {
+    width: 230px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
